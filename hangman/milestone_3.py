@@ -12,7 +12,7 @@ def check_guess(guess :str):
 def ask_for_input():
     while True:
         guess = input('Guess a letter. \n')
-        if guess.isalpha():
+        if guess.isalpha() and len(guess) == 1:
             break
         else:
             print('Invalid letter. Please, enter a single alphabetical character.')
